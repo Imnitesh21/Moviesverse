@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css"/>
+    <title>Sign in</title>
+</head>
+<body>
+    <div class="loginbox">
+        <h1>Sign In</h1>
+        <form onsubmit="checkForm()">
+            <label for="email">Email</label>
+            <input type="text" placeholder="Email" name="email" id="email" required>
+            <label>Password</label>
+            <input type="password" placeholder="Password" id="password" required>
+            <input type="submit" value="Sign In">
+        </form>
+        <div class="forgot">
+            <a href="#">Forgot Password?</a>
+        </div>
+        <br></br>
+        <div class="signup">
+            <a href="#">Not a member? <span>Signup now</span></a>
+        </div>
+    </div>
+    <script>
+    function checkForm(){
+        alert('Sign in Sucessfully');
+        return false;
+}
+    </script>
+</body>
+</html>
