@@ -26,10 +26,20 @@
         </div>
     </div>
     <script>
-    function checkForm(){
-        alert('Sign in Sucessfully');
-        return false;
-}
+   function checkForm(){
+            var myEmail = document.forms[0].email.value;
+            var myPass = document.forms[0].password.value;
+            if(myEmail == '' || myPass == ''){
+                alert("Please fill out all the fields");
+                return false;
+            } else if(myPass.length <= 6){
+                alert("Please ensure your password must be of length 6 or more");
+            }
+             else {
+                alert("Logged In successfully");
+                return true;
+            }
+        };
     </script>
 </body>
 </html>
